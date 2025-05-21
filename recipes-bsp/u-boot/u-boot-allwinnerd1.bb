@@ -7,12 +7,11 @@ FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
 SRC_URI = " \
-    git://github.com/MartinHerren/u-boot.git;protocol=https;branch=d1-wip_2024.10 \
+    git://github.com/MartinHerren/u-boot.git;protocol=https;branch=d1-wip_2025.01 \
     file://tftp-mmc-boot.txt \
     file://uEnv-nezha.txt \
-    file://0002-Fix-build-with-newer-swig.patch \
 "
-SRCREV = "72fe7ca31a883ff89cd47fb934f3cbd5c46dcd1a"
+SRCREV = "c36b9b79ea88194d4e1f54781bc6b175b5744ddf"
 
 DEPENDS:append = " \
     u-boot-tools-native \
